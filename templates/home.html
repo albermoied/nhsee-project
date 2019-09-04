@@ -1,0 +1,36 @@
+
+<h2>Project Homepage</h2>
+<table>
+    <tr>
+        <th>Project ID</th>
+        <th>Tile</th>
+        <th>Description</th>
+        <th>Category</th>
+        <th>Avg Score</th>
+        <th>Rank</th>
+        <th>Z-Score</th>
+        <th>Scaled Score</th>
+        <th>Scaled Rank</th>
+        <th>Scaled Z</th>
+        <th>ISEF Score</th>
+        <th>ISEF Rank</th>
+        <th>No Show</th>
+    </tr>
+    {% for item in projects %}
+    <tr>
+        <td>{{ item.project_id }}</td>
+        <td>{{ item.title }}</td>
+        <td>{{ item.description }}</td>
+        <td>{{ item.category }}</td>
+        <td>{{ item.avg_score }}</td>
+        <td>{{ item.rank }}</td>
+        <td>{{ item.z_score }}</td>
+        <td>{{ item.scaled_score }}</td>
+        <td>{{ item.scaled_rank }}</td>
+        <td>{{ item.scaled_z }}</td>
+        <td>{{ item.isef_score }}</td>
+        <td>{{ item.isef_rank }}</td>
+        <td>{{ item.no_show }}</td>
+    </tr>
+    {% endfor %}
+</table>
